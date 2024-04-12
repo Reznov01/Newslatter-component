@@ -1,0 +1,23 @@
+.toggleView {
+  transform: translateX(100%) !important;
+}
+
+.hiddenSuccess,
+.toggleViews {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease;
+}
+.articleActive {
+  transition: transform 0.5s ease;
+}
+
+.hiddenSuccess {
+  transform: translateX(-100%);
+  z-index: 1;
+}
+
+.colorsBg {
+  transition: background ease 1s;
+}
