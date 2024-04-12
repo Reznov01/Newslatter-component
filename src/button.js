@@ -5,6 +5,7 @@ const btnDismiss = document.getElementById("btnDismiss");
 const email_input = document.getElementById("email-input");
 const errorEmailmsg = document.getElementById("errorEmail");
 const articleActive = document.getElementById("articleActive");
+const userEmailValue = document.getElementById("emailUser");
 buttonSubscribe.onclick = (e) => {
   e.preventDefault();
   let valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -13,6 +14,7 @@ buttonSubscribe.onclick = (e) => {
     // divNewslatter.classList.add("toggleView");
     articleActive.classList.add("toggleView");
     sectionSuccess.style.transform = "translateX(0%)";
+    userEmailValue.innerHTML = email_input.value;
   } else {
     errorEmailmsg.style.opacity = "1";
     email_input.classList.remove("border-Dark-Slate-Grey/50");
